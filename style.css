@@ -203,8 +203,8 @@ ul { list-style: none; }
   justify-content: center;
 }
 
-.about-image-placeholder {
-  width: 260px;
+.about-photo { 
+  width: 2900px;
   height: 260px;
   border-radius: 50%;
   border: 2px dashed var(--border);
