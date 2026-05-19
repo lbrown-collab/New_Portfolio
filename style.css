@@ -64,6 +64,13 @@ ul { list-style: none; }
 }
 .btn-outline:hover { background: var(--accent-dim); }
 
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -224,8 +231,9 @@ ul { list-style: none; }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  align-items: start;
 }
 
 .project-card {
