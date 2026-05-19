@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(230, 200, 145);
+  background: url('stocksnap-cards-2617324.jpg') center center / cover no-repeat;
   color: black;
   font-family: 'Segoe UI', system-ui, Georgia, 'Times New Roman', Times,;
   min-height: 80vh;
@@ -64,6 +64,8 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 #cards-remaining {
   color: darkgreen;
   font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
 }
 
 .card-display {
