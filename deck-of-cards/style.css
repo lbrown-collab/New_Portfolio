@@ -5,26 +5,30 @@
 }
 
 body {
-  background: url('stocksnap-cards-2617324.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('stocksnap-cards-2617324.jpg') center center / cover no-repeat;
   color: black;
   font-family: 'Segoe UI', system-ui, Georgia, 'Times New Roman', Times,;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
 }
 
 .container {
   text-align: center;
   padding: 2rem;
   max-width: 800px;
-  width: 100%;
+  width: 40%;
 }
 
 h1 {
   font-size: 4rem;
+  font-weight: 600;
   margin-bottom: 2rem;
   color: darkmagenta;
+  text-shadow: #080808 3px 3px 4px;
 }
 
 .controls {
@@ -48,13 +52,13 @@ button {
 
 #draw-btn {
   background: teal;
-  border: 3px solid palegreen;
+  border: 3px solid rgb(52, 74, 52);
   color: darkgreen
 }
 
 #shuffle-btn {
   background: teal;
-  border: 3px solid palegreen;
+  border: 3px solid rgb(52, 74, 52);
   color: darkgreen;
 }
 
@@ -62,8 +66,9 @@ button:hover { opacity: 0.8; }
 button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 #cards-remaining {
-  color: darkgreen;
+  color: darkslategray;
   font-size: 1.5rem;
+  font-weight: 600;
   width: 100%;
   text-align: center;
 }
