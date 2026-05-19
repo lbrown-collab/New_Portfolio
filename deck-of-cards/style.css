@@ -5,10 +5,10 @@
 }
 
 body {
-  background: #1a1a2e;
-  color: #e5e5e5;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  min-height: 100vh;
+  background: rgb(230, 200, 145);
+  color: black;
+  font-family: 'Segoe UI', system-ui, Georgia, 'Times New Roman', Times,;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,9 +22,9 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
-  color: #e2c275;
+  color: darkmagenta;
 }
 
 .controls {
@@ -47,29 +47,30 @@ button {
 }
 
 #draw-btn {
-  background: #e2c275;
-  color: #1a1a2e;
+  background: teal;
+  border: 3px solid palegreen;
+  color: darkgreen
 }
 
 #shuffle-btn {
-  background: transparent;
-  border: 2px solid #e2c275;
-  color: #e2c275;
+  background: teal;
+  border: 3px solid palegreen;
+  color: darkgreen;
 }
 
 button:hover { opacity: 0.8; }
 button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 #cards-remaining {
-  color: #888;
-  font-size: 0.9rem;
+  color: darkgreen;
+  font-size: 1.5rem;
 }
 
 .card-display {
   margin-bottom: 2rem;
   min-height: 160px;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: center;
 }
 
@@ -81,8 +82,8 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .card {
   width: 100px;
   height: 140px;
-  background: white;
-  border-radius: 10px;
+  background: rgb(248, 232, 232);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,13 +110,13 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .drawn-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.9rem;
   justify-content: center;
 }
 
 .drawn-cards .card {
-  width: 55px;
-  height: 78px;
+  width: 65px;
+  height: 90px;
   font-size: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   animation: none;
