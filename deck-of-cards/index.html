@@ -15,15 +15,25 @@
       <button id="draw-btn">Draw Card</button>
       <button id="shuffle-btn">Shuffle Deck</button>
       <p id="cards-remaining">Cards remaining: 52</p>
+      <p id="coin-count">$20 dollars</p>
     </div>
 
-    <div id="card-display" class="card-display">
-      <p class="placeholder">Press "Draw Card" to begin</p>
+    <div class="card-and-guess">
+      <div id="card-display" class="card-display">
+        <p class="placeholder">Press "Draw Card" to begin</p>
+      </div>
+      <div id="guess-section" class="guess-section hidden">
+        <button id="higher-btn">▲  Higher</button>
+        <button id="lower-btn">▼  Lower</button>
+      </div>
     </div>
+   
+   <div id="result-message" class="results-message"></div>
+   
+   <div id="drawn-cards" class="drawn-cards"></div>
 
-    <div id="drawn-cards" class="drawn-cards"></div>
-  </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>

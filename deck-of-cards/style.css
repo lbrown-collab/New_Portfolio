@@ -66,11 +66,21 @@ button:hover { opacity: 0.8; }
 button:disabled { opacity: 0.4; cursor: not-allowed; }
 
 #cards-remaining {
-  color: darkslategray;
-  font-size: 1.5rem;
+  color: rgb(86, 139, 139);
+  font-size: 1.7rem;
   font-weight: 600;
   width: 100%;
   text-align: center;
+}
+
+#coin-count {
+  position: fixed;
+  top: 1.5rem;
+  left: 40%;
+  color: goldenrod;
+  font-size: 2.5rem;
+  font-weight: 650;
+  width: 90%;
 }
 
 .card-display {
@@ -87,15 +97,15 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 }
 
 .card {
-  width: 100px;
-  height: 140px;
+  width: 150px;
+  height: 200px;
   background: rgb(248, 232, 232);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
   animation: flipIn 0.3s ease;
@@ -105,7 +115,7 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .card.black { color: #1a1a2e; }
 
 .card .suit {
-  font-size: 2.5rem;
+  font-size: 4rem;
   line-height: 1;
 }
 
@@ -132,3 +142,46 @@ button:disabled { opacity: 0.4; cursor: not-allowed; }
 .drawn-cards .card .suit {
   font-size: 1.1rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.cards-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-and-guess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+#higher-btn {
+  background: #2d6a4f;
+  border: 3px solid #1b4332;
+  color: #d8f3dc
+}
+
+#lower-btn {
+ background: #2d6a4f;
+  border: 3px solid #1b4332;
+  color: #d8f3dc
+}
+
+.result-message {
+  text-alight: center;
+  font-size: 2rem;
+  font-weight: 700;
+  min-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.result-message.correct {color: #9d0996;}
+.result-message.wrong {color: rgb(203, 39, 11)}
+.result-message.tie {color: #30ae62;}
